@@ -14,8 +14,8 @@ async def cyclic_func():
     while True:
         try:
             async with httpx.AsyncClient() as client:
-                await client.get("https://fastapi-ping.onrender.com/ping")
-                await asyncio.sleep(120)  # 15 minutes
+                await client.get("http://127.0.0.1:8000/ping")
+                await asyncio.sleep(120)  # 2 minutes
         except Exception as e:
             print(f"Error in cyclic_func: {e}")
             await asyncio.sleep(60)  # wait a minute before retrying
