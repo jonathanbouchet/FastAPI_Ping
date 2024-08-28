@@ -7,6 +7,8 @@ click==8.1.7
 croniter==3.0.3
 fastapi==0.112.2
 h11==0.14.0
+httpcore==1.0.5
+httpx==0.27.2
 idna==3.8
 pydantic==2.8.2
 pydantic_core==2.20.1
